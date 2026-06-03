@@ -1,0 +1,22 @@
+{
+  "name": "smart_disaster_risk_prediction_system",
+  "version": "1.0.0",
+  "description": "Smart Disaster Risk Prediction System - Frontend",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.16.1",
+    "chart.js": "^4.5.1",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
+}

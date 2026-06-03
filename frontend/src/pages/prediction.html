@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/src/assets/fav.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prediksi — Smart Disaster Risk Prediction System</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/src/styles/main.css" />
+    </head>
+    <body>
+        <div class="ambient">
+            <div class="amb c1"></div>
+            <div class="amb c2"></div>
+            <div class="amb c3"></div>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a href="/index.html" class="nav-brand">
+                    <div class="nav-brand-icon">
+                        <img src="/src/assets/icon.svg" alt="Logo" />
+                    </div>
+                    <div>
+                        <div class="nav-brand-name">Smart Disaster Risk Prediction System</div>
+                        <div class="nav-brand-tag">AI-Powered Risk Prediction</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="/index.html">Dashboard</a>
+
+                    <a href="/src/pages/prediction.html" class="active">
+                        Prediksi
+                    </a>
+                    <a href="/src/pages/map.html">Peta Risiko</a>
+                    <a href="/src/pages/reports.html">Laporan</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="/src/pages/login.html" id="btn-login" class="btn-outline">Login</a>
+                    <button id="btn-logout" class="btn-outline" style="display:none">Logout</button>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <div style="margin-bottom:2rem;animation:card-in .4s cubic-bezier(.22,1,.36,1)">
+                <div class="page-eyebrow">
+                    <span class="page-eyebrow-dot"></span>
+                    AI-Powered Prediction
+                </div>
+                <h1 class="page-title">Prediksi Risiko Bencana</h1>
+                <p class="page-subtitle">Masukkan parameter lingkungan untuk mendapatkan analisis tingkat risiko bencana.</p>
+            </div>
+            <div class="prediction-layout">
+                <div class="card" style="animation-delay:.08s">
+                    <div class="card-eyebrow"><span class="card-eyebrow-dot"></span>Input Parameter</div>
+                    <!-- Lokasi -->
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Provinsi</label>
+                            <select id="province">
+                                <option value="">Pilih provinsi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Kota / Kabupaten</label>
+                            <select id="city">
+                                <option value="">Pilih kota/kabupaten</option>
+                            </select>
+                        </div>
+                    </div>
+        
+
+                    <!-- Data curah hujan -->
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Curah Hujan <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-1000 mm)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Total volume air hujan yang turun di suatu area (dalam milimeter).</span></div>
+                            </label>
+                            <input type="number" id="curah_hujan_mm" placeholder="Cth: 120" min="0" step="0.1" />
+                        </div>
+                        <div class="form-group">
+                            <label>Akumulasi Hujan 7 Hari <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-3000 mm)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Total curah hujan selama satu minggu berturut-turut. Mengukur kejenuhan tanah.</span></div>
+                            </label>
+                            <input type="number" id="hujan_akumulasi_7d_mm" placeholder="Cth: 450" min="0" step="0.1" />
+                        </div>
+                    </div>
+        
+                    <!-- Data suhu -->
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Suhu Rata-rata <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(10-45 °C)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Temperatur rata-rata harian yang stabil.</span></div>
+                            </label>
+                            <input type="number" id="suhu_rata2_c" placeholder="Cth: 27" step="0.1" />
+                        </div>
+                        <div class="form-group">
+                            <label>Suhu Maksimum <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(10-50 °C)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Suhu tertinggi yang tercatat pada hari tersebut (puncak panas).</span></div>
+                            </label>
+                            <input type="number" id="suhu_max_c" placeholder="Cth: 33" step="0.1" />
+                        </div>
+                    </div>
+        
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Suhu Minimum <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-40 °C)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Suhu terendah pada hari tersebut (biasanya saat dini hari).</span></div>
+                            </label>
+                            <input type="number" id="suhu_min_c" placeholder="Cth: 22" step="0.1" />
+                        </div>
+                        <div class="form-group">
+                            <label>Kelembaban <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-100 %)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Kandungan uap air di udara. Kelembaban tinggi mempercepat badai atau hujan ekstrim.</span></div>
+                            </label>
+                            <input type="number" id="kelembaban_persen" placeholder="Cth: 85" min="0" max="100" step="0.1" />
+                        </div>
+                    </div>
+        
+                    <!-- Data tambahan -->
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Hari Kering <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-365 hari)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Jumlah hari tanpa hujan. Angka tinggi berarti kemarau yang bisa memicu kebakaran hutan.</span></div>
+                            </label>
+                            <input type="number" id="hari_kering_berturut" placeholder="Cth: 3" min="0" step="1" />
+                        </div>
+                        <div class="form-group">
+                            <label>Frekuensi Bencana <span style="font-size:0.75rem;font-weight:normal;color:var(--ink3)">(0-3000)</span>
+                                <div class="tooltip">(?)<span class="tooltip-text">Total kejadian bencana yang pernah tercatat. Masukkan perkiraan historis (misal: 0-10 untuk daerah aman, 100+ untuk daerah langganan bencana) untuk menyesuaikan profil risiko wilayah.</span></div>
+                            </label>
+                            <input type="number" id="freq_bencana" placeholder="Cth: 5" min="0" step="1" />
+                        </div>
+                    </div>
+        
+                    <!-- Waktu -->
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Bulan</label>
+                            <select id="month">
+                                <option value="">Pilih bulan</option>
+                                <option value="1">Januari</option>
+                                <option value="2">Februari</option>
+                                <option value="3">Maret</option>
+                                <option value="4">April</option>
+                                <option value="5">Mei</option>
+                                <option value="6">Juni</option>
+                                <option value="7">Juli</option>
+                                <option value="8">Agustus</option>
+                                <option value="9">September</option>
+                                <option value="10">Oktober</option>
+                                <option value="11">November</option>
+                                <option value="12">Desember</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="display:flex;align-items:flex-end;padding-bottom:.3rem">
+                            <p style="font-size:.78rem;color:var(--ink3);line-height:1.5">
+                                Kuartal dihitung otomatis<br>dari bulan yang dipilih.
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="draft-actions">
+                        <button class="btn-primary" id="btn-predict" style="flex:2">
+                            🔍 <span id="predict-label">Prediksi Sekarang</span>
+                        </button>
+                        <button class="btn-primary btn-outline btn-draft" id="btn-save-draft" style="flex:1; margin-top:1rem;">
+                            Simpan Draft Lokal
+                        </button>
+                    </div>
+                    
+                    <div id="draft-container" style="display:none">
+                        <div style="font-size:0.75rem;font-weight:600;margin-top:1.5rem;color:var(--ink3);text-transform:uppercase;letter-spacing:1px;">Draft Tersimpan (Klik untuk pakai)</div>
+                        <div class="draft-list" id="draft-list"></div>
+                    </div>
+                </div>
+        
+                <!-- ── RESULT ── -->
+                <div id="result-area">
+                    <div class="card" style="text-align:center;padding:3rem 2rem;color:var(--ink3)">
+                        <div style="font-size:3rem;margin-bottom:1rem;opacity:.3">🤖</div>
+                        <div style="font-family:var(--serif);font-size:1.1rem;color:var(--ink2);margin-bottom:.5rem">Siap Menganalisis</div>
+                        <div style="font-size:.875rem">Isi semua parameter di sebelah kiri, lalu klik <strong>Prediksi Sekarang</strong></div>
+                    </div>
+                </div>
+        
+            </div>
+        </main>
+        
+        <div class="toast-wrap" id="toast-wrap"></div>
+        <script type="module" src="/src/pages/js/prediction.js"></script>
+    </body>
+</html>

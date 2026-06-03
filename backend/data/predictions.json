@@ -1,0 +1,210 @@
+[
+  {
+    "id": "eed662b6-9c5a-47f3-8fc6-19ff30edeb1a",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 33,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 85,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 3,
+      "month": 1,
+      "freq_bencana": 5,
+      "province": "DKI JAKARTA",
+      "city": "KOTA JAKARTA SELATAN"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0015,
+      "riskScore": 0.1,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T14:55:54.556Z"
+  },
+  {
+    "id": "fb215f09-bcc0-4905-88d5-a30c77282301",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 33,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 84.9,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 3,
+      "month": 3,
+      "freq_bencana": 5,
+      "province": "KEPULAUAN RIAU",
+      "city": "NATUNA"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0001,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T14:56:54.147Z"
+  },
+  {
+    "id": "5d8fb700-baf3-4f7d-90ed-fba113ee85e6",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 33,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 84.9,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 3,
+      "month": 3,
+      "freq_bencana": 5,
+      "province": "ACEH",
+      "city": "BENER MERIAH"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0017,
+      "riskScore": 0.2,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:03:53.439Z"
+  },
+  {
+    "id": "b904ccf3-7777-4180-9ce6-38ddb55ce8af",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 1000,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 33,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 84.9,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 3,
+      "month": 3,
+      "freq_bencana": 5,
+      "province": "ACEH",
+      "city": "BENER MERIAH"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:03:59.540Z"
+  },
+  {
+    "id": "ce3ca2fd-58ef-4af1-8e6e-6b5ff4093a49",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 1000,
+      "suhu_rata2_c": 1100,
+      "suhu_max_c": 10000,
+      "suhu_min_c": 500,
+      "kelembaban_persen": 84.9,
+      "hujan_akumulasi_7d_mm": 5000,
+      "hari_kering_berturut": 3,
+      "month": 3,
+      "freq_bencana": 5,
+      "province": "ACEH",
+      "city": "BENER MERIAH"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:04:15.127Z"
+  },
+  {
+    "id": "e7830cc8-97a7-498f-8c5d-6d84829fff82",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 1000,
+      "suhu_rata2_c": 1100,
+      "suhu_max_c": 10000,
+      "suhu_min_c": 500,
+      "kelembaban_persen": 84.9,
+      "hujan_akumulasi_7d_mm": 5000,
+      "hari_kering_berturut": 3,
+      "month": 3,
+      "freq_bencana": 5,
+      "province": "ACEH",
+      "city": "BENER MERIAH"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:04:16.001Z"
+  },
+  {
+    "id": "8a42fde5-d17b-47b1-b4af-92e6c668fe1b",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 100,
+      "suhu_rata2_c": 26,
+      "suhu_max_c": 32,
+      "suhu_min_c": 20,
+      "kelembaban_persen": 85,
+      "hujan_akumulasi_7d_mm": 300,
+      "hari_kering_berturut": 4,
+      "month": 12,
+      "freq_bencana": 1869,
+      "province": "JAWA BARAT",
+      "city": "BOGOR"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.1856,
+      "riskScore": 18.6,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:12:45.344Z"
+  },
+  {
+    "id": "b4751e80-7230-424e-ae0c-7e3896f5fdd2",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 33,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 85,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 3,
+      "month": 4,
+      "freq_bencana": 5,
+      "province": "JAWA BARAT",
+      "city": "GARUT"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0083,
+      "riskScore": 0.8,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-03T15:18:59.535Z"
+  }
+]

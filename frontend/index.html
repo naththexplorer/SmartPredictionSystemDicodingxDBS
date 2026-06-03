@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/src/assets/fav.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smart Disaster Risk Prediction System — Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/src/styles/main.css" />
+    </head>
+    <body>
+        <div class="ambient">
+            <div class="amb c1"></div>
+            <div class="amb c2"></div>
+            <div class="amb c3"></div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a href="/index.html" class="nav-brand">
+                    <div class="nav-brand-icon">
+                        <img src="/src/assets/icon.svg" alt="Logo" />
+                    </div>
+                    <div>
+                        <div class="nav-brand-name">Smart Disaster Risk Prediction System</div>
+                        <div class="nav-brand-tag">AI-Powered Risk Prediction</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="/index.html" class="active">Dashboard</a>
+                    <a href="/src/pages/prediction.html">Prediksi</a>
+                    <a href="/src/pages/map.html">Peta Risiko</a>
+                    <a href="/src/pages/reports.html">Laporan</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="/src/pages/login.html" id="btn-login" class="btn-outline">Login</a>
+                    <button id="btn-logout" class="btn-outline" style="display:none">Logout</button>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <div style="margin-bottom:2rem;animation:card-in .4s cubic-bezier(.22,1,.36,1)">
+                <div class="page-eyebrow">
+                    <span class="page-eyebrow-dot"></span>
+                    Real-time Monitoring
+                </div>
+                <h1 class="page-title">Sistem Prediksi Bencana Alam di Indonesia</h1>
+                <p class="page-subtitle">Pantau risiko dan laporan bencana secara langsung di seluruh Indonesia.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" style="animation-delay:.06s">
+                    <div class="stat-icon">📋</div>
+                    <div class="stat-label">Total Laporan</div>
+                    <div class="stat-value" id="total-reports">—</div>
+                </div>
+                <div class="stat-card red" style="animation-delay:.12s">
+                    <div class="stat-icon">🔴</div>
+                    <div class="stat-label">Zona Risiko Tinggi</div>
+                    <div class="stat-value red" id="high-risk">—</div>
+                </div>
+                <div class="stat-card" style="animation-delay:.18s">
+                    <div class="stat-icon">🗂️</div>
+                    <div class="stat-label">Bencana Tercatat</div>
+                    <div class="stat-value amber" id="total-disasters">—</div>
+                </div>
+                <div class="stat-card emerald" style="animation-delay:.24s">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-label">Status Sistem</div>
+                    <div class="stat-value emerald" style="font-size:1.3rem;margin-top:.25rem" id="system-status">Online</div>
+                </div>
+            </div>
+            <div class="card" style="animation-delay:.3s">
+                <div class="card-eyebrow">
+                    <span class="card-eyebrow-dot"></span>
+                    Tren Bencana per Jenis
+                </div>
+                <canvas id="disaster-chart" height="90"></canvas>
+            </div>
+            <div class="card" style="animation-delay:.36s">
+                <div class="card-eyebrow">
+                    <span class="card-eyebrow-dot"></span>
+                    Laporan Terbaru
+                </div>
+                <div id="reports-list">
+                    <div class="empty-state">
+                        <div class="empty-emoji">📋</div>
+                        <h3>Memuat data...</h3>
+                        <p>Mengambil laporan terbaru dari server</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="toast-wrap" id="toast-wrap"></div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="/src/pages/js/dashboard.js"></script>
+    </body>
+</html>

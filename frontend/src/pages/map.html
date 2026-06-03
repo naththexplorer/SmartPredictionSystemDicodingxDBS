@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/src/assets/fav.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peta Risiko — Smart Disaster Risk Prediction System</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="/src/styles/main.css" />
+    </head>
+    <body>
+        <div class="ambient">
+            <div class="amb c1"></div>
+            <div class="amb c2"></div>
+            <div class="amb c3"></div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a href="/index.html" class="nav-brand">
+                    <div class="nav-brand-icon">
+                        <img src="/src/assets/icon.svg" alt="Logo" />
+                    </div>
+                    <div>
+                        <div class="nav-brand-name">Smart Disaster Risk Prediction System</div>
+                        <div class="nav-brand-tag">AI-Powered Risk Prediction</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="/index.html">Dashboard</a>
+                    <a href="/src/pages/prediction.html">Prediksi</a>
+                    <a href="/src/pages/map.html" class="active">Peta Risiko</a>
+                    <a href="/src/pages/reports.html">Laporan</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="/src/pages/login.html" id="btn-login" class="btn-outline">
+                        Login
+                    </a>
+                    <button id="btn-logout" class="btn-outline" style="display:none">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <div style="margin-bottom:2rem;animation:card-in .4s cubic-bezier(.22,1,.36,1)">
+                <div class="page-eyebrow">
+                    <span class="page-eyebrow-dot"></span>
+                    Interactive Map
+                </div>
+                <h1 class="page-title">
+                    Peta Risiko Bencana
+                </h1>
+                <p class="page-subtitle">
+                    Visualisasi lokasi kejadian bencana dan laporan dari seluruh Indonesia.
+                </p>
+            </div>
+            <div class="card" style="padding:0;overflow:hidden;animation-delay:.08s">
+                <div id="map"></div>
+            </div>
+            <div class="card" style="animation-delay:.16s">
+                <div class="card-eyebrow">
+                    <span class="card-eyebrow-dot"></span>
+                    Legenda Peta
+                </div>
+                <div style="display:flex;gap:2rem;flex-wrap:wrap">
+                    <div style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--ink2)">
+                        <span style="width:12px;height:12px;border-radius:50%;background:var(--red);flex-shrink:0;box-shadow:0 0 0 3px var(--red-bg)"></span>
+                        Risiko Tinggi
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--ink2)">
+                        <span style="width:12px;height:12px;border-radius:50%;background:var(--amber);flex-shrink:0;box-shadow:0 0 0 3px var(--amber-bg)"></span>
+                        Risiko Sedang
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--ink2)">
+                        <span style="width:12px;height:12px;border-radius:50%;background:var(--emerald);flex-shrink:0;box-shadow:0 0 0 3px var(--emerald-bg)"></span>
+                        Risiko Rendah / Laporan
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script type="module" src="/src/pages/js/map.js"></script>
+    </body>
+</html>

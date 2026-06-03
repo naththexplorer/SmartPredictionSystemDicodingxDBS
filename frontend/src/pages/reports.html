@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/src/assets/fav.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laporan — Smart Disaster Risk Prediction System</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/src/styles/main.css" />
+    </head>
+    <body>
+        <div class="ambient">
+            <div class="amb c1"></div>
+            <div class="amb c2"></div>
+            <div class="amb c3"></div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a href="/index.html" class="nav-brand">
+                    <div class="nav-brand-icon">
+                        <img src="/src/assets/icon.svg" alt="Logo" />
+                    </div>
+                    <div>
+                        <div class="nav-brand-name">Smart Disaster Risk Prediction System</div>
+                        <div class="nav-brand-tag">AI-Powered Risk Prediction</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="/index.html">Dashboard</a>
+                    <a href="/src/pages/prediction.html">Prediksi</a>
+                    <a href="/src/pages/map.html">Peta Risiko</a>
+                    <a href="/src/pages/reports.html" class="active">Laporan</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="/src/pages/login.html" id="btn-login" class="btn-outline">
+                        Login
+                    </a>
+                    <button id="btn-logout" class="btn-outline" style="display:none">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <div style="margin-bottom:2rem;animation:card-in .4s cubic-bezier(.22,1,.36,1)">
+                <div class="page-eyebrow">
+                    <span class="page-eyebrow-dot"></span>
+                    CRUD Laporan
+                </div>
+                <h1 class="page-title">
+                    Laporan Bencana
+                </h1>
+                <p class="page-subtitle">
+                    Buat dan kelola laporan kejadian bencana di lapangan.
+                </p>
+            </div>
+            <div class="card" style="animation-delay:.08s">
+                <div class="card-eyebrow">
+                    <span class="card-eyebrow-dot"></span>
+                    Buat Laporan Baru
+                </div>
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label>Lokasi</label>
+                        <input
+                            type="text"
+                            id="r-location"
+                            placeholder="Cth: Desa Sukamaju, Bogor"
+                            autocomplete="off"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Bencana</label>
+                        <select id="r-type">
+                            <option value="flood">🌊 Banjir</option>
+                            <option value="earthquake">🌍 Gempa Bumi</option>
+                            <option value="fire">🔥 Kebakaran</option>
+                            <option value="landslide">⛰️ Tanah Longsor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Garis Lintang (Lat.) [opsional]</label>
+                        <input
+                            type="number"
+                            id="r-lat"
+                            placeholder="-6.2000"
+                            step="0.0001"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label>Garis Bujur (Long.) [opsional]</label>
+                        <input
+                            type="number"
+                            id="r-lng"
+                            placeholder="106.8166"
+                            step="0.0001"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Deskripsi Kejadian</label>
+                    <textarea
+                        id="r-desc"
+                        placeholder="Jelaskan kondisi bencana secara singkat dan jelas ..."
+                    ></textarea>
+                </div>
+                <div style="display:flex;align-items:center;gap:1rem;margin-top:.5rem">
+                    <button class="btn-primary" id="btn-submit" style="max-width:200px;margin-top:0">
+                        📤
+                        <span id="submit-label">Kirim Laporan</span>
+                    </button>
+                    <span id="login-hint" style="font-size:.8rem;color:var(--ink3);display:none">
+                        ⚠️
+                        <a href="/src/pages/login.html" style="color:var(--amber)">
+                            Login
+                        </a>
+                        terlebih dahulu
+                    </span>
+                </div>
+            </div>
+            <div class="card" style="animation-delay:.16s">
+                <div class="card-eyebrow">
+                    <span class="card-eyebrow-dot"></span>
+                    Semua Laporan
+                </div>
+                <div id="reports-container">
+                    <div class="empty-state">
+                        <div class="empty-emoji">📋</div>
+                        <h3>Memuat laporan...</h3>
+                        <p>Mengambil data dari server</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="toast-wrap" id="toast-wrap"></div>
+        <script type="module" src="/src/pages/js/reports.js"></script>
+    </body>
+</html>
