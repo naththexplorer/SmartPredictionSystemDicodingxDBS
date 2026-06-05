@@ -206,5 +206,447 @@
       "source": "model"
     },
     "createdAt": "2026-06-03T15:18:59.535Z"
+  },
+  {
+    "id": "eaf833d9-9281-4036-8783-3e4a2da2d89a",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 800,
+      "suhu_rata2_c": 30,
+      "suhu_max_c": 35,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 2399.9,
+      "hari_kering_berturut": 30,
+      "month": 6,
+      "freq_bencana": 10,
+      "province": "JAWA BARAT",
+      "city": "KOTA BANDUNG"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:12:10.954Z"
+  },
+  {
+    "id": "485503a8-a9fd-4c22-8450-c94f27c4e47b",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 800,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 2399.9,
+      "hari_kering_berturut": 30,
+      "month": 6,
+      "freq_bencana": 10,
+      "province": "JAWA BARAT",
+      "city": "KOTA BANDUNG"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:12:21.301Z"
+  },
+  {
+    "id": "c6047b88-94be-420c-8823-1c4fa06db8de",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 800,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 2399.9,
+      "hari_kering_berturut": 30,
+      "month": 6,
+      "freq_bencana": 1000,
+      "province": "JAWA BARAT",
+      "city": "KOTA BANDUNG"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:12:28.893Z"
+  },
+  {
+    "id": "cbc4e7d3-10a3-4bbd-82a6-8ea0617904e0",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 800,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 2399.9,
+      "hari_kering_berturut": 30,
+      "month": 6,
+      "freq_bencana": 5000,
+      "province": "JAWA BARAT",
+      "city": "KOTA BANDUNG"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0,
+      "riskScore": 0,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:12:41.847Z"
+  },
+  {
+    "id": "b963cfeb-d717-4e28-a858-1361cc2ec145",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 30,
+      "month": 6,
+      "freq_bencana": 5000,
+      "province": "JAWA BARAT",
+      "city": "GARUT"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0445,
+      "riskScore": 4.4,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:12:59.706Z"
+  },
+  {
+    "id": "e8059c01-df2e-46bf-b94c-5f58a23c6a2d",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 30,
+      "month": 1,
+      "freq_bencana": 5000,
+      "province": "JAWA BARAT",
+      "city": "GARUT"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.03,
+      "riskScore": 3,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:13:04.689Z"
+  },
+  {
+    "id": "2658ddf4-b6f9-4bf9-a62b-c8846fd0235f",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 1,
+      "month": 3,
+      "freq_bencana": 1000,
+      "province": "JAWA BARAT",
+      "city": "GARUT"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0458,
+      "riskScore": 4.6,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:13:18.418Z"
+  },
+  {
+    "id": "1c392afa-36c5-4547-be6f-73c69dcd36d4",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 120,
+      "suhu_rata2_c": 25,
+      "suhu_max_c": 30,
+      "suhu_min_c": 25,
+      "kelembaban_persen": 80,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 1,
+      "month": 3,
+      "freq_bencana": 1000,
+      "province": "JAWA BARAT",
+      "city": "GARUT"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0458,
+      "riskScore": 4.6,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T02:13:25.297Z"
+  },
+  {
+    "id": "f1c1ecf9-e14e-4c01-84a5-e81fd7ee21c0",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 150,
+      "suhu_rata2_c": 30,
+      "suhu_max_c": 38,
+      "suhu_min_c": 29,
+      "kelembaban_persen": 87,
+      "hujan_akumulasi_7d_mm": 450,
+      "hari_kering_berturut": 1,
+      "month": 4,
+      "freq_bencana": 1000,
+      "province": "JAWA BARAT",
+      "city": "BANDUNG"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0027,
+      "riskScore": 0.3,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:20:43.377Z"
+  },
+  {
+    "id": "8097d9d8-f03a-42e4-9f67-1af413362925",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 0.71,
+      "suhu_rata2_c": 23,
+      "suhu_max_c": 27,
+      "suhu_min_c": 21,
+      "kelembaban_persen": 90,
+      "hujan_akumulasi_7d_mm": 68,
+      "hari_kering_berturut": 2,
+      "month": 11,
+      "freq_bencana": 550,
+      "province": "JAWA BARAT",
+      "city": "KOTA SUKABUMI"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.3184,
+      "riskScore": 31.8,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:24:19.494Z"
+  },
+  {
+    "id": "d4327e2f-b340-44aa-8747-f083d446843d",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 0.71,
+      "suhu_rata2_c": 23,
+      "suhu_max_c": 27,
+      "suhu_min_c": 21,
+      "kelembaban_persen": 90,
+      "hujan_akumulasi_7d_mm": 68,
+      "hari_kering_berturut": 2,
+      "month": 11,
+      "freq_bencana": 550,
+      "province": "KALIMANTAN TIMUR",
+      "city": "PENAJAM PASER UTARA"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.0787,
+      "riskScore": 7.9,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:24:51.764Z"
+  },
+  {
+    "id": "006a69e5-1afa-4b64-9c27-df6d78880ec3",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 12,
+      "freq_bencana": 1868,
+      "province": "JAWA BARAT",
+      "city": "BOGOR"
+    },
+    "result": {
+      "riskLevel": "High Alert",
+      "riskProbability": 0.6484,
+      "riskScore": 64.8,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko tinggi. Perlu pemantauan intensif dan kesiapan respons wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:27:05.363Z"
+  },
+  {
+    "id": "2c998c0a-5d9a-4376-8a1f-120ce8163899",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 12,
+      "freq_bencana": 3000,
+      "province": "JAWA BARAT",
+      "city": "BOGOR"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.3418,
+      "riskScore": 34.2,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:27:13.083Z"
+  },
+  {
+    "id": "7756ec6a-bb73-45da-bcea-5229bc7d9adc",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 12,
+      "freq_bencana": 2000,
+      "province": "JAWA BARAT",
+      "city": "BOGOR"
+    },
+    "result": {
+      "riskLevel": "High Alert",
+      "riskProbability": 0.6232,
+      "riskScore": 62.3,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko tinggi. Perlu pemantauan intensif dan kesiapan respons wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:27:20.482Z"
+  },
+  {
+    "id": "3bd9d1ed-4b37-4301-bdc8-8ab17600f056",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 3,
+      "freq_bencana": 2000,
+      "province": "JAWA BARAT",
+      "city": "BOGOR"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.4394,
+      "riskScore": 43.9,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:27:32.655Z"
+  },
+  {
+    "id": "58c3c3f1-3e0c-4645-9a0f-98ff46d9e312",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 12,
+      "freq_bencana": 1870,
+      "province": "JAWA BARAT",
+      "city": "KOTA BOGOR"
+    },
+    "result": {
+      "riskLevel": "High Alert",
+      "riskProbability": 0.5171,
+      "riskScore": 51.7,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko tinggi. Perlu pemantauan intensif dan kesiapan respons wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:38:50.004Z"
+  },
+  {
+    "id": "a8521ccd-8390-40d5-9f87-34089404779d",
+    "userId": null,
+    "input": {
+      "curah_hujan_mm": 2,
+      "suhu_rata2_c": 27,
+      "suhu_max_c": 32,
+      "suhu_min_c": 22,
+      "kelembaban_persen": 79,
+      "hujan_akumulasi_7d_mm": 12,
+      "hari_kering_berturut": 0,
+      "month": 12,
+      "freq_bencana": 1870,
+      "province": "BANTEN",
+      "city": "LEBAK"
+    },
+    "result": {
+      "riskLevel": "Normal Risk",
+      "riskProbability": 0.1573,
+      "riskScore": 15.7,
+      "threshold": 0.4799999999999999,
+      "recommendation": "Risiko normal. Tetap lakukan pemantauan rutin terhadap cuaca dan laporan wilayah.",
+      "source": "model"
+    },
+    "createdAt": "2026-06-05T15:39:09.458Z"
   }
 ]

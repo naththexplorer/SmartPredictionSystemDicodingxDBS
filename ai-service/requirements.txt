@@ -5,4 +5,4 @@ numpy==2.4.3
 pandas==3.0.1
 pydantic==2.13.4
 python-multipart==0.0.29
-tf_keras==2.18.0
+tf_keras==2.20.0

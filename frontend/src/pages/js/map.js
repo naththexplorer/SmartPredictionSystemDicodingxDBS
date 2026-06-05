@@ -159,18 +159,4 @@ async function loadMarkers() {
     }
 }
 
-const token = localStorage.getItem("token");
-
-if (token) {
-    document.getElementById("btn-logout").style.display = "flex";
-
-    document.getElementById("btn-login").style.display = "none";
-}
-
-document.getElementById("btn-logout")?.addEventListener("click", () => {
-    localStorage.removeItem("token");
-
-    window.location.reload();
-});
-
 loadMarkers();

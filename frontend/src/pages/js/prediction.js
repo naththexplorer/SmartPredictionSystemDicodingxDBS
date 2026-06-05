@@ -191,25 +191,12 @@ document.getElementById('btn-predict').addEventListener('click', async () => {
         renderResult(result, `${payload.city}, ${payload.province}`);
         showToast('Prediksi berhasil ✓', 'success');
     } catch (err) {
-        const msg = err.response?.status === 401
-            ? 'Login diperlukan untuk melakukan prediksi'
-            : err.response?.data?.message || 'Gagal memproses prediksi';
+        const msg = err.response?.data?.message || 'Gagal memproses prediksi';
         showToast(msg, 'error');
     } finally {
         btn.disabled      = false;
         label.textContent = 'Prediksi Sekarang';
     }
-});
-
-// ── Auth state ────────────────────────────────────────────────────────────────
-const token = localStorage.getItem('token');
-if (token) {
-    document.getElementById('btn-logout').style.display = 'flex';
-    document.getElementById('btn-login').style.display  = 'none';
-}
-document.getElementById('btn-logout')?.addEventListener('click', () => {
-    localStorage.removeItem('token');
-    window.location.reload();
 });
 
 // ── Fitur Draft (Lokal) ───────────────────────────────────────────────────────

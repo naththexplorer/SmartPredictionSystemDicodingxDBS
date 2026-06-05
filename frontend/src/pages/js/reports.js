@@ -110,10 +110,6 @@ async function loadReports() {
 }
 
 document.getElementById("btn-submit").addEventListener("click", async () => {
-    if (!localStorage.getItem("token")) {
-        document.getElementById("login-hint").style.display = "block";
-        return;
-    }
     const payload = {
         location: document.getElementById("r-location").value.trim(),
         description: document.getElementById("r-desc").value.trim(),
@@ -158,18 +154,5 @@ window.deleteReport = async (id) => {
         showToast("Gagal menghapus", "error");
     }
 };
-
-const token = localStorage.getItem("token");
-
-if (token) {
-    document.getElementById("btn-logout").style.display = "flex";
-    document.getElementById("btn-login").style.display = "none";
-}
-
-document.getElementById("btn-logout")?.addEventListener("click", () => {
-    localStorage.removeItem("token");
-
-    window.location.reload();
-});
 
 loadReports();
