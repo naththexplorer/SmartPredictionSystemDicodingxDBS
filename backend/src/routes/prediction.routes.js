@@ -1,10 +1,9 @@
 import { Router } from 'express';
 import { predict, getPredictions } from '../controllers/prediction.controller.js';
-import { authenticate } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
 router.post('/', predict);
-router.get('/', authenticate, getPredictions);
+router.get('/', getPredictions);
 
 export default router;
