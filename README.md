@@ -10,7 +10,8 @@ Capstone project — Full Stack Web App prediksi risiko bencana alam.
 ## Cara Menjalankan
 
 ### 1. AI Service (Dijalankan Terpisah)
-cd ai-service && pip install -r requirements.txt && uvicorn main:app --reload --port 8000
+1. cd ai-service
+2. pip install -r requirements.txt && uvicorn main:app --reload --port 8000
 
 ### 2. Folder Root (Frontend & Backend dijalankan bersamaan)
 1. npm install
